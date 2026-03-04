@@ -8,26 +8,39 @@ Large branches are hard to review. `/split` analyzes your branch's diff against 
 
 ## Install
 
-### Claude Code Marketplace
+### Claude Code: Plugin Marketplace (Recommended)
 
-```bash
-claude plugin install Iron-Ham/split
+```
+/plugin marketplace add Iron-Ham/split
+/plugin install split@split
 ```
 
-### Manual Install
+### Claude Code: Manual Install
 
 Clone the repo and copy the skill files into Claude Code's skills directory:
 
 ```bash
-git clone https://github.com/Iron-Ham/split.git
-cd split
+git clone https://github.com/Iron-Ham/split.git ~/split
+cd ~/split
 mkdir -p ~/.claude/skills/split/scripts
 cp SKILL.md ~/.claude/skills/split/
 cp scripts/split_diff.py ~/.claude/skills/split/scripts/
 chmod +x ~/.claude/skills/split/scripts/split_diff.py
 ```
 
-This also works for other AI coding agents that support a skills/tools directory (Codex, Cursor, etc.) — just copy `SKILL.md` and `scripts/split_diff.py` to wherever your agent reads custom instructions from.
+### Codex
+
+```bash
+git clone https://github.com/Iron-Ham/split.git ~/split
+mkdir -p ~/.codex/skills/public/split/scripts
+cp ~/split/SKILL.md ~/.codex/skills/public/split/
+cp ~/split/scripts/split_diff.py ~/.codex/skills/public/split/scripts/
+chmod +x ~/.codex/skills/public/split/scripts/split_diff.py
+```
+
+### Other AI Coding Agents
+
+For Cursor or other agents, clone the repo and copy `SKILL.md` and `scripts/split_diff.py` to wherever your agent reads custom instructions from.
 
 ### Requirements
 
