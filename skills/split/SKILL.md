@@ -56,7 +56,7 @@ BASE_BRANCH=${provided_base:-$(git branch -r | grep -oE 'origin/(main|master)' |
 # If CURRENT_BRANCH == BASE_BRANCH: "You are on the base branch. Switch to a feature branch first."
 
 # 6. Verify split_diff.py exists
-SPLIT_SCRIPT="${CLAUDE_PLUGIN_ROOT:-$HOME/.claude/skills/split}/scripts/split_diff.py"
+SPLIT_SCRIPT="${CLAUDE_PLUGIN_ROOT}/skills/split/scripts/split_diff.py"
 # If not found: "split_diff.py not found at $SPLIT_SCRIPT. Is the skill installed?"
 
 # 7. Verify gh CLI is available (needed for Phase 6)
