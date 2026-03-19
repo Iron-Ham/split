@@ -23,8 +23,8 @@ Clone the repo and copy the skill files into Claude Code's skills directory:
 git clone https://github.com/Iron-Ham/split.git ~/split
 cd ~/split
 mkdir -p ~/.claude/skills/split/scripts
-cp SKILL.md ~/.claude/skills/split/
-cp scripts/split_diff.py ~/.claude/skills/split/scripts/
+cp skills/split/SKILL.md ~/.claude/skills/split/
+cp skills/split/scripts/split_diff.py ~/.claude/skills/split/scripts/
 chmod +x ~/.claude/skills/split/scripts/split_diff.py
 ```
 
@@ -33,14 +33,14 @@ chmod +x ~/.claude/skills/split/scripts/split_diff.py
 ```bash
 git clone https://github.com/Iron-Ham/split.git ~/split
 mkdir -p ~/.codex/skills/public/split/scripts
-cp ~/split/SKILL.md ~/.codex/skills/public/split/
-cp ~/split/scripts/split_diff.py ~/.codex/skills/public/split/scripts/
+cp ~/split/skills/split/SKILL.md ~/.codex/skills/public/split/
+cp ~/split/skills/split/scripts/split_diff.py ~/.codex/skills/public/split/scripts/
 chmod +x ~/.codex/skills/public/split/scripts/split_diff.py
 ```
 
 ### Other AI Coding Agents
 
-For Cursor or other agents, clone the repo and copy `SKILL.md` and `scripts/split_diff.py` to wherever your agent reads custom instructions from.
+For Cursor or other agents, clone the repo and copy `skills/split/SKILL.md` and `skills/split/scripts/split_diff.py` to wherever your agent reads custom instructions from.
 
 ### Requirements
 
