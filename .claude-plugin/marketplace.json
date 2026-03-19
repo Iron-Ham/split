@@ -8,7 +8,7 @@
     "name": "split",
     "source": "./",
     "description": "Split a large branch into N stacked logical branches with hunk-level granularity. Analyzes diffs, groups changes into logical units, and creates stacked branches ready for separate PRs.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "author": { "name": "Iron-Ham" },
     "homepage": "https://github.com/Iron-Ham/split",
     "repository": "https://github.com/Iron-Ham/split",
